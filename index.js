@@ -1,5 +1,8 @@
 const inquirer = require("inquirer");
 const { departments, deleteDepartment, roles, deleteRole, employees, deleteEmployee, managerEmployees, deptEmployees, departmentSalaryTotal, addDepartment, addRole, addEmployee, updateEmployee } = require('./assets/db-functions');
+const { mainMenu } = require('./menu');
+
+mainMenu();
 
 const userPrompt = [
   {
